@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 from telegram import Bot
 from telegram.error import TelegramError
 from concurrent.futures import ThreadPoolExecutor
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import traceback
 import random
 import datetime

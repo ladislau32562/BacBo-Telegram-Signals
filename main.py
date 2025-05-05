@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv
+from telegram import Update
 from telegram import Bot
 from telegram.error import TelegramError
 from concurrent.futures import ThreadPoolExecutor

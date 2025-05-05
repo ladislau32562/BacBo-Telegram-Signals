@@ -18,7 +18,10 @@ import datetime
 import sys
 
 # Load environment variables from .env file
+from dotenv import load_dotenv
 load_dotenv()
+token = os.getenv("TELEGRAM_TOKEN")
+app = ApplicationBuilder().token(token).build(
 
 # Retrieve environment variables
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
